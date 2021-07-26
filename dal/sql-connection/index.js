@@ -4,11 +4,17 @@ const db = async (query) => {
   let [data, status] = [null, null];
   try {
     var connection = await mysql.createConnection({
-      host: "127.0.0.1",
-      user: "Hilag",
-      database: "hellodatabase",
-      password: "Hilag1997!",
+      host: "sql11.freesqldatabase.com",
+      user: "sql11427782",
+      database: "sql11427782",
+      password: "cIMCI9TtLU",
     });
+    // var connection = await mysql.createConnection({
+    //   host: "127.0.0.1",
+    //   user: "Hilag",
+    //   database: "hellodatabase",
+    //   password: "Hilag1997!",
+    // });
 
     let res = await startConnection(query, connection);
 
